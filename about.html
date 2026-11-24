@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About Us - MUZEX TECHNOLOGIES</title><meta name="description" content="About MUZEX - Our Story and Our Team."><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
+<style>
+/* MOBILE NAVBAR FIX - MUZEX */
+@media (max-width: 768px){
+  header{
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    flex-wrap:nowrap !important;
+    gap:8px !important;
+    padding:12px 14px !important;
+    position:relative !important;
+  }
+  header .logo{
+    flex:0 0 auto !important;
+    margin-right:auto !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:8px !important;
+  }
+  header .logo img{
+    width:55px !important;
+    height:55px !important;
+    object-fit:contain !important;
+  }
+  header .logo-text{
+    display:flex !important;
+    flex-direction:column !important;
+    line-height:1.1 !important;
+  }
+  header .menu-btn{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:44px !important; height:44px !important;
+    min-width:44px !important;
+    margin-left:auto !important;
+    background:#7C3AED !important; color:#fff !important;
+    border:none !important; border-radius:12px !important;
+    font-size:22px !important; cursor:pointer !important;
+    order:2 !important;
+  }
+  header .btn-top{
+    display:none !important;
+  }
+  header nav{
+    display:none !important;
+    position:absolute !important;
+    top:100% !important; left:12px !important; right:12px !important;
+    background:#fff !important;
+    flex-direction:column !important;
+    padding:12px !important; gap:4px !important;
+    border-radius:16px !important;
+    box-shadow:0 10px 30px rgba(0,0,0,.15) !important;
+    z-index:99 !important;
+  }
+  header nav.open, header nav.active, header nav.show{
+    display:flex !important;
+  }
+  header nav a{
+    display:block !important; padding:12px !important;
+    text-align:center !important; font-size:16px !important;
+  }
+}
+@media (max-width: 768px){
+  .logo img, .header .logo img, .navbar .logo img, .nav-logo img{
+    width:55px !important;
+    height:55px !important;
+    max-width:none !important;
+  }
+  .logo, .header .logo, .navbar .logo{
+    font-size:22px !important;
+  }
+  .logo span{
+    font-size:22px !important;
+  }
+}
+/* SIRF ICON FIX - BAKI KUCH NAHI */
+.icon-box{
+  width:62px !important;
+  height:62px !important;
+  border-radius:50% !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:linear-gradient(135deg,#A855F7,#EC4899) !important;
+  box-shadow:0 8px 20px rgba(168,85,247,.35) !important;
+}
+.icon-box i{
+  color:#fff !important;
+  font-size:26px !important;
+}
+</style>
+  <body>
+<div class="container">
+<header>
+<a href="index.html" class="logo"><img src="muzex-logo.png" alt="MUZEX"><div class="logo-text"><span class="logo-main">MUZEX</span><span class="logo-sub">TECHNOLOGIES</span><span class="logo-tag">SOFTWARE HOUSE</span></div></a>
+<button class="menu-btn" id="menuBtn">☰</button>
+<nav id="mainNav"><a href="index.html"><span>Home</span></a><a href="about.html"><span>About</span></a><a href="services.html"><span>Services</span></a><a href="team.html"><span>Team</span></a><a href="contact.html"><span>Contact</span></a></nav>
+<a href="contact.html" class="btn-top">Get a Quote</a>
+</header>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <span class="about-tag">ABOUT US</span>
+  <h2>About <span>MUZEX TECHNOLOGIES</span></h2>
+  <p class="about-desc">We are a passionate software house building innovative, reliable, and scalable digital solutions that empower businesses to grow. From custom applications to cloud platforms and seamless integrations, we transform ideas into technology that delivers real impact.</p>
+  <div class="about-cards">
+    <div class="about-card"><div class="icon-box"><i class="fas fa-users"></i></div><h3>Experienced Team</h3><p>Skilled professionals delivering quality software with years of expertise.</p></div>
+    <div class="about-card"><div class="icon-box"><i class="fas fa-bolt"></i></div><h3>Innovative Solutions</h3><p>Modern technologies and creative approaches to solve complex challenges.</p></div>
+    <div class="about-card"><div class="icon-box"><i class="fas fa-headset"></i></div><h3>Dedicated Support</h3><p>Reliable support whenever you need, ensuring smooth and lasting success.</p></div>
+  </div>
+</section>
+
+<!-- OUR STORY - ABOUT KE ANDAR -->
+<section class="services" id="story" style="background:#EDEAFF;">
+  <div class="small">● OUR STORY</div>
+  <h2>Who <span>We Are</span></h2>
+  <p class="sub">We are problem solvers. MUZEX started with one simple idea - help small businesses look big online with clean design and honest work.</p>
+  <div class="cards">
+    <div class="card" style="text-align:left;"><div class="icon-box"><i class="fas fa-bullseye"></i></div><h3>Our Mission</h3><p>To build fast, modern and affordable digital products that help every business grow - no templates, 100% custom work.</p></div>
+    <div class="card" style="text-align:left;"><div class="icon-box"><i class="fas fa-eye"></i></div><h3>Our Vision</h3><p>To become a trusted digital partner for startups in Pakistan and worldwide - known for quality, creativity and 24/7 support.</p></div>
+  </div>
+  <div class="cards" style="margin-top:18px;">
+    <div class="card" style="text-align:left;"><h3>What We Believe</h3><p>Customer First • Innovation • Quality • Impact</p><p style="font-size:14px;">We listen first, then design. Your goal is our goal.</p></div>
+    <div class="card" style="text-align:left;"><h3>How We Work</h3><p>Collaborative • Transparent • Fast</p><p style="font-size:14px;">You will know every step - design, development, delivery. No hidden charges.</p></div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-left"><div class="footer-logo-row"><h2>MUZEX Technologies</h2><img src="muzex-logo.png" alt="MUZEX"></div><p>Turning creative ideas into modern digital<br>experiences. Let's build something meaningful<br>together.</p><p style="margin-top:12px;">📧 <a href="mailto:muzextechnologies@gmail.com" style="color:white;font-weight:700;">muzextechnologies@gmail.com</a><br>💼 LinkedIn: /company/muzex<br>📸 <a href="https://www.instagram.com/muzextechnologies" target="_blank" style="color:white;font-weight:700;">Instagram: @muzextechnologies</a></p></div>
+    <div class="footer-links"><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Our Services</a><a href="contact.html">Contact</a></div>
+    <div class="footer-contact"><h3>Get In Touch</h3><a href="mailto:muzextechnologies@gmail.com">Email Us</a><a href="https://linkedin.com" target="_blank">Linkedin ↗</a><a href="https://www.instagram.com/muzextechnologies" target="_blank">Instagram: @muzextechnologies ↗</a><a href="contact.html">Start a Project</a></div>
+  </div>
+  <div class="footer-bottom"><a href="mailto:muzextechnologies@gmail.com" class="btn-email">✉️ Email Us</a><p>© 2026 MUZEX TECHNOLOGIES. All Rights Reserved.</p><a href="https://wa.me/923095794028" target="_blank" class="btn-whatsapp">💬 WhatsApp - +92 309 5794028</a></div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
